@@ -1,0 +1,7 @@
+<?php 
+
+    $numero = 7;
+
+    echo "O número informado é: " . $numero;
+
+?>
