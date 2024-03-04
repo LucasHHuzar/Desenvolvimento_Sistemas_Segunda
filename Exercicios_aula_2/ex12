@@ -1,0 +1,11 @@
+<?php 
+
+    $num1 = 4;
+
+    $num2 = 8;
+
+    $soma = ($num1 + $num2) * $num1;
+
+    echo "A soma de (4 + 8) x 4 = " . $soma;
+
+?>
