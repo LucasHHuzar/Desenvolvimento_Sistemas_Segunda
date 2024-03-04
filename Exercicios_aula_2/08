@@ -1,0 +1,9 @@
+<?php 
+
+    $graus = 95;
+
+    $conta = (5 * ($graus - 32) / 9);
+
+    echo "Os graus em Celsius é: " . $conta;
+
+?>
