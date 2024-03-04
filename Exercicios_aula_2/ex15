@@ -1,0 +1,11 @@
+<?php 
+
+    $num = 10;
+
+    $porc = $num * 0.05;
+
+    $porcentagem = $num * 0.5;
+
+    echo "5% de 10 é: " . $porc . ". E 50% de 10 é: " . $porcentagem;
+
+?>
