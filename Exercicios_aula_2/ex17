@@ -1,0 +1,10 @@
+<?php 
+
+    $ms = 50;
+
+    $km = $ms * 3.6;
+
+    echo "A velocidade de um carro a 50 m/s em km/h é: " . $km;
+
+
+?>
