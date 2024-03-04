@@ -1,0 +1,19 @@
+<?php 
+
+    $num1 = 10;
+
+    $num2 = 5;
+
+    $real = 2.5;
+
+    $produto = (2 * $num1) + ($num2 / 2);
+
+    $soma = (3 * $num1) + $real;
+
+    $cubo = $real * $real * $real;
+
+    echo "O produto do dobro do primeiro com metade do segundo é: " . $produto . "<br><br>";
+    echo "A soma do triplo do primeiro com o terceiro é: " . $soma . "<br><br>";
+    echo "O terceiro elevado ao cubo é: " . $cubo;
+
+?>
