@@ -1,0 +1,9 @@
+<?php 
+
+    $num = 10;
+
+    $porc = $num * 0.15;
+
+    echo "15% de 10 é: " . $porc;
+
+?>
