@@ -1,0 +1,9 @@
+<?php 
+
+    $area = 4;
+
+    $conta = $area * 2;
+
+    echo "O dobro da área do quadro é: " . $conta . "m.";
+
+?>
