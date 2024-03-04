@@ -1,0 +1,11 @@
+<?php 
+
+    $salario = 4;
+
+    $horas = 10;
+
+    $conta = $salario * $horas;
+
+    echo "Seu salário mensal é: R$ " . $conta;
+
+?>
