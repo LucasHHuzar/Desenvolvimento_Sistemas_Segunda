@@ -1,0 +1,17 @@
+<?php 
+
+    $num1 = 10;
+
+    $num2 = 20;
+
+    $quadrado1 = $num1 * $num1;
+
+    $quadrado2 = $num2 * $num2;
+
+    $soma = $quadrado1 + $quadrado2;
+
+    echo "O quadrado de 10 é: " . $quadrado1 . ". E o quadrado de 20 é: " . $quadrado2 . "<br><br>";
+
+    echo "E a soma dos dois quadrados é: " . $soma;
+
+?>
