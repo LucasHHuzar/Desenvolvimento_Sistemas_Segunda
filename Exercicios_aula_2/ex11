@@ -1,0 +1,12 @@
+<?php 
+
+    $altura = 1.60;
+
+    $homem = (72.7 * $altura) - 58;
+
+    $mulher = (62.1 * $altura) - 44.7;
+
+    echo "O peso ideal para homens com 1,60 de altura é: " . $homem . "<br><br>";
+    echo "O peso ideal para mulheres com 1,60 de altura é: " . $mulher . "<br><br>";
+
+?>
