@@ -1,0 +1,9 @@
+<?php 
+
+    $metros = 4;
+
+    $conta = $metros * 100;
+
+    echo "A conversão em centimetros é: " . $conta . "cm.";
+
+?>
