@@ -1,0 +1,9 @@
+<?php 
+
+    $graus = 35;
+
+    $conta = (($graus * 9 / 5) + 32);
+
+    echo "Os graus em Faremheit é: " . $conta;
+
+?>
