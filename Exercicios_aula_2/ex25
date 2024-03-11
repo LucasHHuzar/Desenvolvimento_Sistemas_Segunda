@@ -1,0 +1,23 @@
+<form method="GET">
+
+    <label for="valor">Valor do produto: </label>
+    <input name="valor" id="valor" type="text"><br>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+<?php 
+
+    $valor = $_GET['valor'];
+
+    $acres = 0.16; 
+
+    $total = $valor + ($valor * $acres);
+
+    $parcela = $total / 10;
+    
+    echo "O valor do produto é: " . $total . "<br>";   
+    echo "O produto em 10x fica R$ " . $parcela . " por mes.";
+    
+?>
