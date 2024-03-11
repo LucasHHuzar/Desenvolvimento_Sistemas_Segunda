@@ -1,0 +1,29 @@
+<form method="GET">
+
+    <label for="nota1">Digite a nota 1: </label>
+    <input name="nota1" id="nota1" type="text"><br>
+
+    <label for="nota2">Digite a nota 2: </label>
+    <input name="nota2" id="nota2" type="text"><br>
+    
+    <label for="nota3">Digite a nota 3: </label>
+    <input name="nota3" id="nota3" type="text">
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+<?php 
+
+    $nota1 = $_GET['nota1'];
+    $nota2 = $_GET['nota2'];
+    $nota3 = $_GET['nota3'];
+
+    $soma = ($nota1 * 2) + ($nota2 * 3) + ($nota3 * 5);
+    $pesos = 2 + 3 + 5;
+
+    $total = $soma / $pesos;
+    
+    echo "A média ponderada é: " . $total;   
+    
+?>
