@@ -1,0 +1,26 @@
+<form method="GET">
+
+    <label for="base1">Digite a base 1: </label>
+    <input name="base1" id="base1" type="text"><br>
+
+    <label for="base2">Digite a base 2: </label>
+    <input name="base2" id="base2" type="text"><br>
+    
+    <label for="alt">Digite a altura: </label>
+    <input name="alt" id="alt" type="text"><br>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+<?php 
+
+    $base1 = $_GET['base1'];
+    $base2 = $_GET['base2'];
+    $alt = $_GET['alt'];
+
+    $total = (($base1 + $base2) * $alt) / 2;
+    
+    echo "A área do trapézio é: " . $total;   
+    
+?>
