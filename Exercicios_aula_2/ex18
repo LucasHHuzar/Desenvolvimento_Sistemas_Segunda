@@ -1,0 +1,11 @@
+<?php 
+
+    $altura = 1.86;
+
+    $peso = 96;
+
+    $conta = $peso / ($altura * $altura);
+
+    echo "O IMC de uma pessoa é: " . $conta;
+
+?>
