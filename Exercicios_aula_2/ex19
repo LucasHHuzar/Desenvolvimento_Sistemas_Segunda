@@ -1,0 +1,11 @@
+<?php 
+
+    $valor = 85.0;
+
+    $desconto = 0.9;
+
+    $conta = $valor * $desconto;
+
+    echo "O desconto de 9% de um produto é: " . $conta;
+
+?>
