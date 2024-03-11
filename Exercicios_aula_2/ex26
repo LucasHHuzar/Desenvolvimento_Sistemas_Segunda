@@ -1,0 +1,22 @@
+<form method="GET">
+
+    <label for="km">Quantos Km o veículo percorreu?</label><br>
+    <input name="km" id="km" type="text"><br><br>
+
+    <label for="litros">Quantos litros o carro utilizou?</label><br>
+    <input name="litros" id="litros" type="text"><br>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+<?php 
+
+    $km = $_GET['km'];
+    $litros = $_GET['litros'];
+
+    $consumo = $km / $litros;
+
+    echo "O consumo médio do carro que percorreu {$km}  com {$litros} foi de {$consumo} km/l!";
+    
+?>
