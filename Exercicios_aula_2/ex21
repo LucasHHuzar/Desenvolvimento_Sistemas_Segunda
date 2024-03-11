@@ -1,0 +1,26 @@
+<form method="GET">
+
+    <label for="comp">Digite o comprimento da caixa: </label>
+    <input name="comp" id="comp" type="text"><br>
+
+    <label for="larg">Digite a largura da caixa: </label>
+    <input name="larg" id="larg" type="text"><br>
+    
+    <label for="alt">Digite a altura da caixa: </label>
+    <input name="alt" id="alt" type="text"><br>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+<?php 
+
+    $comp = $_GET['comp'];
+    $larg = $_GET['larg'];
+    $alt = $_GET['alt'];
+
+    $volume = $comp * $larg * $alt;
+    
+    echo "O volume da caixa é: " . $volume;   
+    
+?>
