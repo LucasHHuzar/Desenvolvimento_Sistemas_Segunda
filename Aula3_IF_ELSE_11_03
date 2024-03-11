@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="GET">
+
+        <label for="ano">Digite o ano de nascimento: </label>
+        <input name="ano" id="ano" type="text">
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <?php 
+    
+        $ano = $_GET['ano'];
+        $idade = 2024 - $ano;
+
+        echo "Ano: {$ano} / Idade: {$idade}";
+        
+        echo "<br>";
+
+        if ($idade > 18) {
+
+            echo "Parabéns cidadão, pode votar e dirigir!";
+
+        } else if ($idade == 18) {    
+        
+            echo "Ano especial";
+
+        } else if ($idade >= 16 && $idade < 18) {    
+        
+            echo "Legal, você já pode votar mas não dirigir! :/";
+
+        } else {
+
+            echo "Ainda não!";
+
+        }
+    
+    ?>
+    
+</body>
+</html>
