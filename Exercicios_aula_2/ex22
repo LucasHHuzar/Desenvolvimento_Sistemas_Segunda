@@ -1,0 +1,21 @@
+<form method="GET">
+
+    <label for="valor">Digite o valor de um produto: </label>
+    <input name="valor" id="valor" type="text">
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+<?php 
+
+    $valor = $_GET['valor'];
+
+    $desconto = 0.27;
+
+    $valor_desc = $valor * $desconto;
+
+    $total = $valor - $valor_desc;
+    
+    echo "O valor do produto é: " . $total;
+?>
