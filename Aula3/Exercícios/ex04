@@ -20,7 +20,7 @@
     
         $num1 = $_GET['num1'];
 
-        if ($num1 == 'a' || $num1 == 'e' || $num1 == 'i' || $num1 == 'o' || $num1 == 'u') {
+        if ($num1 == 'a' || $num1 == 'e' || $num1 == 'i' || $num1 == 'o' || $num1 == 'u' || $num1 == 'A' || $num1 == 'E' || $num1 == 'I' || $num1 == 'O' || $num1 == 'U') {
             echo "{$num1} é uma vogal";
         } else {
             echo "{$num1} é uma consoante";
