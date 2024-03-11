@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="GET">
+
+        <label for="num1">Digite o 1º número: </label>
+        <input name="num1" id="num1" type="text"><br>
+
+        <label for="num2">Digite o 2º número: </label>
+        <input name="num2" id="num2" type="text"><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <?php 
+    
+        $num1 = $_GET['num1'];
+        $num2 = $_GET['num2'];
+
+        if ($num1 > $num2) {
+            echo "{$num1} é maior que {$num2}";
+        } else if ($num1 == $num2) {
+            echo "{$num1} é  igual a {$num2}";
+        } else {
+            echo "{$num1} é menor que {$num2}";
+        }
+    
+    ?>
+    
+</body>
+</html>
