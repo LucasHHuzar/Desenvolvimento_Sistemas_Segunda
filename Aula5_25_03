@@ -164,18 +164,16 @@
         vetor com os n primeiros termos da sequência de Fibonacci.
         Exemplo: n = 8, vetor = {1, 1, 2, 3, 5, 8, 13, 21}.*/
     
-    function fibonacii($num1 = 1, $num2  = 1, $res){
+    function fibonacii($contador){
         $numero = 0;
-        foreach ($numero as $contador) {
 
             $soma = $num1 + $num2;
             $soma = $res;
             $res = $num1;
-            $num1 = $num2;
-        
-        } 
+            $num1 = $num2; 
         
     }
+    fibonacii(8);
 
-    
+
     ?>
