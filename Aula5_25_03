@@ -1,0 +1,181 @@
+<?php
+
+    declare(strict_types=1);
+    
+    function lucas(){
+        echo "Iniciando aula 5";
+    }
+
+    lucas();
+
+    function criarTitulo($texto){
+        echo "<h1>{$texto}</h1>";
+    }
+
+    function tituloPreciso($texto){
+
+        echo "<h2>###################</h2>";
+        echo "<h2>## {$texto} ##</h2>";
+        echo "<h2>###################</h2>";
+
+    }
+
+    criarTitulo("Criando títlo - aula 5 - funções");
+    criarTitulo(0123456);
+
+    tituloPreciso("Calcular Medias");
+
+    function calcularMedia($nome, $nota1, $nota2){
+
+        $media = ($nota1 + $nota2) / 2;
+
+        if ($media >= 7) {
+            echo "<p>O Aluno(a) ($nome) foi aprovado com média ($media).</p>";
+        } else {
+            echo "<p>O Aluno(a) ($nome) foi reprovado com média ($media).</p>";
+        }
+
+    }
+
+    calcularMedia("Lucas", 5, 8);
+    calcularMedia("André", 7, 9);
+    calcularMedia("Yuri", 3.5, 4);
+
+    function somar($num1, $num2){
+        $soma = $num1 + $num2;
+
+        echo "<li>{$num1} + {$num2} = {$soma}<br>";
+    }
+
+    function somarNumeros(...$numeros){
+        
+        $soma = 0;
+
+        echo print_r($numeros);
+
+        for ($i=0; $i < count($numeros); $i++) { 
+            $soma += $numeros[$i];
+        }
+
+        foreach ($numeros as $num) {
+            $soma += $num;
+        }
+
+        //$numeros[$i]; => $num;
+
+        echo "<br>Soma: {$soma}<br>";
+
+    }
+    
+    echo ("Listinha de soma: ");
+    somar(5, 5);
+    somarNumeros(10, 5, 32, 4, 9, 14, 19, 20, 50);
+    
+    function console($nome, $numer, $texto, ...$numeros){
+        
+        echo "<br>";
+        echo var_dump($numeros);
+
+    }
+
+    console("nome", 10, "texto", 5, 7, 9, "texto", true, "<br>");
+
+    $verdadeiro = true;
+
+    if ($verdadeiro) {
+
+        function top($nome, $idade){
+            echo "<br>Nome: {$nome} - Idade: {$idade};<br>";
+        }
+
+    }
+    
+    if ($verdadeiro) {
+        top("Lucas", 24);
+    }
+
+    function cacete(){
+
+        echo "<br>Brasil 1 x 7 Alemanha<br>";
+
+        function brasil(){
+            echo "<br>Cacetada<br>";
+        }
+
+    }
+    
+    cacete();
+    brasil();
+
+    echo "<br>";
+
+    function somaDePandora(&$numero){
+        $numero += 5;
+
+        echo "<br>Variavel Valor: {$numero}";
+    }
+
+    $valor = 10;
+    echo "<br>Variavel Valor: {$valor}";
+    somaDePandora($valor);
+    echo "<br>Variavel Valor: {$valor}";
+
+    function subtracao($n1 = 10, $n2 = 5){
+        $sub = $n1 - $n2;
+        echo "<br>{$n1} - {$n2} = {$sub}<br><br>";
+    }
+
+    subtracao();
+    subtracao(20);
+    subtracao(3, 4);
+
+    function divisao(float $n1, float $n2):float{
+        echo var_dump($n1);
+        echo var_dump($n2); 
+
+        $divs = ($n1 / $n2);
+
+        return ($n1 / $n2);
+    }
+    
+    echo var_dump(1);
+    echo var_dump(2);
+    divisao(1, 2);
+
+    $conta = divisao(10, 5);
+    echo "<br>Conta: " . $conta;
+
+    function estranho(){
+        echo "<br>Olá Mundo";
+    }
+
+    $ds = 'estranho';
+    $ds();
+
+    function conta($n1, $n2, &$resp){
+        $resp = $n1 + $n2;
+    }
+
+    $resultado = 0;
+    conta(32, 21, $resultado);
+    echo "<br>{$resultado}";
+
+    /*  Elabore um algoritimo que receba um número n e retorne um 
+        vetor com os n primeiros termos da sequência de Fibonacci.
+        Exemplo: n = 8, vetor = {1, 1, 2, 3, 5, 8, 13, 21}.*/
+    
+    function fibonacii($num1 = 1, $num2  = 1, $res){
+        $numero = 0;
+        foreach ($numero as $contador) {
+
+            $soma = $num1 + $num2;
+            $soma = $res;
+            $res = $num1;
+            $num1 = $num2;
+        
+        } 
+        
+    }
+
+    
+    ?>
