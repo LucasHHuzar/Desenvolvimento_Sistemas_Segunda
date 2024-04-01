@@ -1,0 +1,287 @@
+<form method="GET">
+
+    <label for="dia">Qual a dia de hoje?</label><br>
+    <input name="dia" id="dia" type="text"><br><br>
+
+    <label for="mes">Qual a mês de hoje?</label><br>
+    <input name="mes" id="mes" type="text"><br><br>
+
+    <label for="ano">Qual a ano de hoje?</label><br>
+    <input name="ano" id="ano" type="text"><br><br>
+
+    <button type="submit">Enviar</button>
+
+    </form>
+
+<?php
+
+    // declare(strict_types=1);
+    
+    // function lucas(){
+    //     echo "Iniciando aula 5";
+    // }
+
+    // lucas();
+
+    // function criarTitulo($texto){
+    //     echo "<h1>{$texto}</h1>";
+    // }
+
+    // function tituloPreciso($texto){
+
+    //     echo "<h2>###################</h2>";
+    //     echo "<h2>## {$texto} ##</h2>";
+    //     echo "<h2>###################</h2>";
+
+    // }
+
+    // criarTitulo("Criando títlo - aula 5 - funções");
+    // criarTitulo(0123456);
+
+    // tituloPreciso("Calcular Medias");
+
+    // function calcularMedia($nome, $nota1, $nota2){
+
+    //     $media = ($nota1 + $nota2) / 2;
+
+    //     if ($media >= 7) {
+    //         echo "<p>O Aluno(a) ($nome) foi aprovado com média ($media).</p>";
+    //     } else {
+    //         echo "<p>O Aluno(a) ($nome) foi reprovado com média ($media).</p>";
+    //     }
+
+    // }
+
+    // calcularMedia("Lucas", 5, 8);
+    // calcularMedia("André", 7, 9);
+    // calcularMedia("Yuri", 3.5, 4);
+
+    // function somar($num1, $num2){
+    //     $soma = $num1 + $num2;
+
+    //     echo "<li>{$num1} + {$num2} = {$soma}<br>";
+    // }
+
+    // function somarNumeros(...$numeros){
+        
+    //     $soma = 0;
+
+    //     echo print_r($numeros);
+
+    //     for ($i=0; $i < count($numeros); $i++) { 
+    //         $soma += $numeros[$i];
+    //     }
+
+    //     foreach ($numeros as $num) {
+    //         $soma += $num;
+    //     }
+
+    //     //$numeros[$i]; => $num;
+
+    //     echo "<br>Soma: {$soma}<br>";
+
+    // }
+    
+    // echo ("Listinha de soma: ");
+    // somar(5, 5);
+    // somarNumeros(10, 5, 32, 4, 9, 14, 19, 20, 50);
+    
+    // function console($nome, $numer, $texto, ...$numeros){
+        
+    //     echo "<br>";
+    //     echo var_dump($numeros);
+
+    // }
+
+    // console("nome", 10, "texto", 5, 7, 9, "texto", true, "<br>");
+
+    // $verdadeiro = true;
+
+    // if ($verdadeiro) {
+
+    //     function top($nome, $idade){
+    //         echo "<br>Nome: {$nome} - Idade: {$idade};<br>";
+    //     }
+
+    // }
+    
+    // if ($verdadeiro) {
+    //     top("Lucas", 24);
+    // }
+
+    // function cacete(){
+
+    //     echo "<br>Brasil 1 x 7 Alemanha<br>";
+
+    //     function brasil(){
+    //         echo "<br>Cacetada<br>";
+    //     }
+
+    // }
+    
+    // cacete();
+    // brasil();
+
+    // echo "<br>";
+
+    // function somaDePandora(&$numero){
+    //     $numero += 5;
+
+    //     echo "<br>Variavel Valor: {$numero}";
+    // }
+
+    // $valor = 10;
+    // echo "<br>Variavel Valor: {$valor}";
+    // somaDePandora($valor);
+    // echo "<br>Variavel Valor: {$valor}";
+
+    // function subtracao($n1 = 10, $n2 = 5){
+    //     $sub = $n1 - $n2;
+    //     echo "<br>{$n1} - {$n2} = {$sub}<br><br>";
+    // }
+
+    // subtracao();
+    // subtracao(20);
+    // subtracao(3, 4);
+
+    // function divisao(float $n1, float $n2):float{
+    //     echo var_dump($n1);
+    //     echo var_dump($n2); 
+
+    //     $divs = ($n1 / $n2);
+
+    //     return ($n1 / $n2);
+    // }
+    
+    // echo var_dump(1);
+    // echo var_dump(2);
+    // divisao(1, 2);
+
+    // $conta = divisao(10, 5);
+    // echo "<br>Conta: " . $conta;
+
+    // function estranho(){
+    //     echo "<br>Olá Mundo";
+    // }
+
+    // $ds = 'estranho';
+    // $ds();
+
+    // function conta($n1, $n2, &$resp){
+    //     $resp = $n1 + $n2;
+    // }
+
+    // $resultado = 0;
+    // conta(32, 21, $resultado);
+    // echo "<br>{$resultado}";
+
+    /*  Elabore um algoritimo que receba um número n e retorne um 
+        vetor com os n primeiros termos da sequência de Fibonacci.
+        Exemplo: n = 8, vetor = {1, 1, 2, 3, 5, 8, 13, 21}.*/
+    
+    // function fibonacii($contador){
+        
+    //     $atual = 0;
+    //     $anterior = 1;
+
+    //     for ($i=0; $i < $contador; $i++) { 
+            
+    //         echo $atual + " ";
+
+    //         $sucessor = $atual + $anterior;
+    //         $atual = $anterior;
+    //         $anterior = $sucessor;
+        
+    //     }
+        
+    // }
+
+    // fibonacii(8);
+
+    // function fatorial($num){
+
+    //     $conta = 1;
+
+    //     for ($i = $num; $i > 0; $i--) { 
+            
+    //         $conta *= $num;
+
+    //         echo "{$num} . ";
+            
+    //         $num -= 1;
+            
+    //     }
+        
+    //     echo " = " . $conta;
+
+    // }
+
+    // fatorial(10);
+    
+    function mes(){
+
+        $dia = $_GET['dia'];
+        $mes = $_GET['mes'];
+        $ano = $_GET['ano'];
+        
+        if ($dia > 0 && $dia <= 31 && $mes == 1) {
+
+            echo "{$dia} de janeiro de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 28 && $mes == 2) {
+
+            echo "{$dia} de fevereiro de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 31 && $mes == 3) {
+
+            echo "{$dia} de março de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 30 && $mes == 4) {
+
+            echo "{$dia} de abril de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 31 && $mes == 5) {
+
+            echo "{$dia} de maio de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 30 && $mes == 6) {
+
+            echo "{$dia} de junho de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 31 && $mes == 7) {
+
+            echo "{$dia} de julho de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 31 && $mes == 8) {
+
+            echo "{$dia} de agosto de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 30 && $mes == 9) {
+
+            echo "{$dia} de setembro de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 31 && $mes == 10) {
+
+            echo "{$dia} de outubro de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 30 && $mes == 11) {
+
+            echo "{$dia} de novembro de {$ano}";
+
+        } else if ($dia > 0 && $dia <= 31 && $mes == 12) {
+
+            echo "{$dia} de dezembro de {$ano}";
+
+        } else {
+
+            echo "A data digitada é inválida!";
+            
+        }
+
+    }
+
+    mes();
+
+    ?>  
+
+    
