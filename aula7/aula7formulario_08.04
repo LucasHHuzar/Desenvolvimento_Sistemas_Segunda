@@ -17,7 +17,9 @@
 
         <label for="sobrenome">Sobrenome: </label>
         <input type="text" name="sobrenome" id="id-sobrenome">
-
+        
+        <label for="idade">Idade: </label>
+        <input type="text" name="idade" id="id-idade">
         <input type="text" value="Enviar">
 
     </form>
