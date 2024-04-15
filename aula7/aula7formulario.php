@@ -9,8 +9,11 @@
 <body>
     
     <h1>Cadastro</h1>
+        
+        
 
     <form action="resposta.php" method="get">
+
 
         <label for="nome">Nome: </label>
         <input type="text" name="nome" id="id-nome">
