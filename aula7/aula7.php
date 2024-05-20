@@ -206,7 +206,7 @@
             
         }
 
-        strings();
+        exercicio1();
 
         function nome(){
 

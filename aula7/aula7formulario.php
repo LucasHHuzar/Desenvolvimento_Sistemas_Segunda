@@ -9,8 +9,6 @@
 <body>
     
     <h1>Cadastro</h1>
-        
-        
 
     <form action="resposta.php" method="get">
 
