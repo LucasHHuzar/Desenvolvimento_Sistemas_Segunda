@@ -91,7 +91,7 @@
 
         //createOnDB("usuario(cod, usuario, nome, senha)" VALUES "(NULL, '$usuario', '$nome', '$senha')");
         
-        $q = "INSERT INTO usuario(cod, usuario, nome, senha) VALUES (NULL, '$usuario', '$nome', '$senha')";
+        $q = "INSERT INTO usuarios(cod, usuario, nome, senha) VALUES (NULL, '$usuario', '$nome', '$senha')";
 
         $resp = $banco->query($q);
         echo "Query: $q";
